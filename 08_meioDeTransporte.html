@@ -6,12 +6,21 @@
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
     //Entrada
+const litro = Number(prompt(`Informe o preço do litro de combustível:`));
+const qtd = Number(prompt(`Informe a quantidade de litro de combustível utilizados para ir ao trabalho:`));
+const publico = Number(prompt(`Informe o preço do transporte público: (Ida e Volta)`));
+   
+//Processamento
+let particular = (litro + qtd) * 2;
 
-
-    //Processamento
+(publico < particular)?
+alert(`O mais barato é o transporte público.`):
+(particular < publico)?
+alert(`O mais barato é o transporte particular.`):
+alert(`Os dois transporte tem o mesmo preço.`);
 
     
-    //Saída
+//Saída
 
     
 </script>

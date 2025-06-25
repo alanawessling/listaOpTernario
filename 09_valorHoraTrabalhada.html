@@ -8,10 +8,20 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
-
+const hora = Number(prompt(`Informe a quantidade de horas trabalhadas:`));
+const recebe = Number(prompt(`Informe quanto você recebe por hora:`));
 
     //Processamento
+let salario = hora * recebe;
 
+    (hora < 45)?
+    alert(`Seu salário é de R$ ${salario}`):
+    (hora < 60)?
+    alert(`Seu salário é de R$ ${salario * 0.20}`):
+     (hora > 60)?
+    alert(`Seu salário é de R$ ${salario * 0.30}`):
+    alert(`Dados inválidos!`);
+    
     
     //Saída
 

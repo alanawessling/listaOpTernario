@@ -8,9 +8,21 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-
+const preco = Number(prompt(`Informe o preço do produto:`));
 
     //Processamento
+
+    (preco <= 280)?
+alert(`O novo preço do produto é ${(preco * 0.2) + preco}`).toFixed(2):
+(preco <= 700)?
+alert(`O novo preço do produto é ${(preco * 0.15) + preco}`).toFixed(2):
+(preco <= 1500)?
+alert(`O novo preço do produto é ${(preco * 0.1) + preco}`).toFixed(2):
+(preco > 1500)?
+alert(`O novo preço do produto é ${(preco * 0.05) + preco}`).toFixed(2):
+alert(`Dados inválidos!`);
+
+
 
     
     //Saída
