@@ -11,10 +11,22 @@
 
     //Entrada
 
+    const agua = Number(prompt(`Informe o valor da sua conta de água:`));
+    const energia = Number(prompt(`Informe o valor da sua conta de energia elétrica:`));
+    const tel = Number(prompt(`Informe o valor da sua conta de telefone:`));
+    const mercado = Number(prompt(`Informe o valor da sua conta de supermercado:`));
+    const salario = Number(prompt(`Informe o seu salário:`));
 
     //Processamento
+    let conta = agua + energia + tel + mercado;
+    let final = salario - conta;
 
-    
+    (final > 0) ?
+        alert(`Você pagou tudo e sobrou R$ ${final}`) :
+        (final < 0) ?
+            alert(`Você está devendo R$ ${final}`) :
+            aler(`Você pagou tudo e não sobrou nada!`);
+
     //Saída
-    
+
 </script>
