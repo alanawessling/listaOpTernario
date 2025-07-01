@@ -25,7 +25,9 @@
         alert(`Você pagou tudo e sobrou R$ ${final}`) :
         (final < 0) ?
             alert(`Você está devendo R$ ${final}`) :
-            aler(`Você pagou tudo e não sobrou nada!`);
+           (final == 0) ?
+            alert(`Você pagou tudo e não sobrou nada!`):
+            alert(`Dados inválidos!`)
 
     //Saída
 
